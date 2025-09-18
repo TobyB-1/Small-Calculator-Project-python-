@@ -1,0 +1,23 @@
+# (Project) Calculator2
+
+print("Type in 2 numbers and an operator, I will do the calculation for you!")
+num1 = float(input("First number: "))
+operator = str(input("Operator: "))
+num2 = float(input("Second number: "))
+
+# ------------------------------------------
+
+if operator == "*":
+    times_answer = num1 * num2
+    print(f"{num1} * {num2} = {times_answer}")
+elif operator == "/":
+    divide_answer = num1 / num2
+    print(f"{num1} / {num2} = {divide_answer}")
+elif operator == "+":
+    plus_answer = num1 + num2
+    print(f"{num1} + {num2} = {plus_answer}")
+elif operator == "-":
+    negate_answer = num1 - num2
+    print(f"{num1} - {num2} = {negate_answer}")
+else:
+    print(f"{operator} is not a valid operator")
